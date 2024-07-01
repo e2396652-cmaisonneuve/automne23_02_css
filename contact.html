@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Travail pratique #02">
+	<meta name="author" content="Mariana Neri Matos">
+	<title>Mariana Neri - Conceptrice multidisciplinaire et developpeuse du sites Web</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+</head>
+<body>
+    <header>
+		<div class="breadcrumbs"><a href="index.html">Mariana Neri</a>  / Contact</div>
+		<div class="menu">
+			<a href="index.html">Accueil</a>
+			<a href="parcours.html">Parcours</a>
+			<a href="apropos.html">À propos</a>
+			<a href="contact.html">Contact</a>
+		</div>
+	  </header>
+    <main>
+        <p>Contactez-moi par email à <a href="mailto:ola@mariananeri.com">ola@mariananeri.com</a> ou remplissez le formulaire ci-dessous pour m'envoyer votre message.</p><br>
+        <form action="" method="GET">
+            <label for="champ_nom">Nom</label><br>
+            <input required placeholder="Écrire ici votre nom" type="text" name="nom" id="champ_nom" pattern="[A-Za-z]+"><br>
+            <label for="champ_prenom">Prénom</label><br>
+            <input required placeholder="Écrire ici votre prenom" type="text" name="prenom" id="champ_prenom" pattern="[A-Za-z]+"><br>
+            <label for="champ_organisation">Organisation</label><br>
+            <input required placeholder="Écrire ici votre organisation" type="text" name="organisation" id="champ_organisation" pattern="[A-Za-z]+"><br>
+            <label for="champ_telephone">Numéro de téléphone</label> <small>(Format : 123-456-7890)</small><br>
+            <input type="tel" id="champ_telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890"><br>
+            <label for="champ_courriel">Courriel</label><br>
+            <input required type="email" name="courriel" id="champ_courriel" placeholder="bonjour@moncourriel.com"><br>
+            <label for="champ_raison">Raison du message</label><br>
+            <input required placeholder="Écrire la raison du message" type="text" name="raison" id="champ_raison" pattern="[A-Za-z]+"><br>
+            <label for="champ_commentaires">Message</label><br>
+            <textarea placeholder="Écrire ici votre message" name="message" id="champ_commentaires" cols="30" rows="10"></textarea><br>
+            <label for="champ_reference">Comment avez-vous entendu parler de nos services ?</label><br>
+            <select name="reference" id="champ_reference">
+            <option selected disabled>Sélectionne:</option>
+                <option value="annonce">Annonce</option>
+                <option value="reference">Référence</option>
+                <option value="recherche">Recherche</option>
+                <option value="aucune-reponse">Aucune de ces réponses</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Soumettre</button>
+            <button type="reset">Rétablir</button>
+          </form>
+	</main>
+    <footer>
+		<div class="copyright">©2024 mariana neri</div>
+		<div class="social">
+			<a href="https://www.instagram.com/nananeri/" target="_blank">instagram</a>
+			<a href="https://www.linkedin.com/in/mariananeri/" target="_blank">linkedin</a>
+			<a href="mailto:ola@mariananeri.com" target="_blank">email</a>
+		</div>
+  </footer>
+	</body>
+</html>

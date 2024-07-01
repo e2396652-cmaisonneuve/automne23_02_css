@@ -1,0 +1,343 @@
+/* 
+
+Palette de couleurs
+
+#141414 - Background
+#efefef - Text
+#0084ff - Links hover
+
+Font titles: Bricolage Grotesque https://fonts.google.com/specimen/Bricolage+Grotesque
+Text: Inter https://fonts.google.com/specimen/Inter
+
+Inspiration esthetique: https://markboulton.co.uk/
+
+Echelle typographique
+1em
+1.25em
+1.563em
+1.953em
+2.441em
+
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	min-width: 100%;
+	background-color: #141414;
+	color: #efefef;	
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation version large */
+
+@media (min-width: 500px) {
+	
+	header {
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-top: 30px;
+}
+}
+
+/* Navigation version étroite */
+
+@media (max-width: 500px) {
+
+	header {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 20px;
+		font-family: "Bricolage Grotesque", sans-serif;
+		font-size: 1em;
+	}
+	}
+
+a {
+	color: #efefef;
+	text-underline-offset: 0.1em;
+}
+
+/* HEADER */
+
+.breadcrumbs {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #efefef;
+}
+
+.breadcrumbs-name {
+	text-decoration: none;
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size: 1.5em;
+	font-weight: 800;
+	color: #efefef;
+}
+
+.breadcrumbs a {
+	text-decoration: none;
+	color: #efefef;
+	font-weight: 800;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	text-decoration: none;
+	color: #efefef;
+}
+
+.menu a {
+	color: #efefef;
+	text-underline-offset: 0.1em;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: #0084ff;
+	text-decoration: underline;
+	transition-duration: 300ms;
+	transition-timing-function: ease;
+}
+
+/* CONTENU */
+
+main {   
+	padding: 60px 30px 20px 30px;
+	max-width: 60ch;
+}
+
+main h1 {   
+	padding-top: 40px;
+	padding-bottom: 20px;
+	max-width: 60ch;
+}
+
+main ul {   
+	padding-left: 30px;
+	padding-top: 30px;
+	max-width: 60ch;
+}
+
+main li {
+	padding-bottom: 1.2em;
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-weight: 600;
+	font-size: 1.25em;
+	line-height: 1.25em;
+}
+
+main small {
+	color: #bbbbbb;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 0.8em;
+	line-height: 1em;
+}
+
+.medaillon img{   
+	border-radius: 50%;
+	max-width: 30%;
+	height: auto;
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 2.441em;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 1.953em;
+	line-height: 1.2em;
+}
+
+h3 {
+	font-size: 1.563em;
+	line-height: 1.563em;
+	margin-top: 40px;
+}
+
+h4 {
+	font-size: 1.25em;
+	line-height: 1.25em;
+}
+
+p {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-top: 20px;
+}
+
+a {
+	color: #efefef;
+	text-underline-offset: 0.1em;
+}
+
+a:hover {
+	color: #0084ff;
+	transition-duration: 300ms;
+	transition-timing-function: ease;
+}
+
+img {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	max-width: 100%;
+	height: auto;
+}
+
+img:hover {
+	filter: grayscale(0%);
+	transition-duration: 300ms;
+	transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+section {
+	padding: 0 30px 60px 30px;
+	max-width: 60ch;
+}
+
+/* FORMS */
+
+form small {
+	color: #8a8a8a;
+	font-size: 0.8em;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.4em;
+}
+
+label {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 1.6em;
+}
+
+textarea {
+	height: 10em;
+	max-width: 70%;
+	resize: none;
+	font-size: 1em;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 1.4em;
+}
+
+input, textarea, select {
+	width: 70%;
+	margin: 0.4em 0 0.9em 0;
+	padding: 0.5em;
+	font-size: 1em;
+	font-family: "Inter", sans-serif;
+}
+
+button {
+	padding: 15px;
+	margin-top: 20px;
+	margin-right: 40px;
+	background-color: #141414;
+	color: #efefef;
+	border: 1px solid #efefef;
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size: 1.4em;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 1.7em;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #0084ff;
+	border: 1px solid #0084ff;
+}
+
+/* FOOTER */
+
+footer {
+	bottom: 0;
+	margin-top: auto;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+
+.copyright {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.7em;
+	line-height: 1em;
+	text-transform: uppercase;
+	color: #8a8a8a;
+}
+
+.social {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.7em;
+	line-height: 1em;
+	display: flex;
+	gap: 30px;
+	text-transform: uppercase;
+	color: #8a8a8a;
+}
+
+.social a {
+	color: #8a8a8a;
+	text-decoration: none;
+}
+
+.social a:hover {
+	color: #0084ff;
+	transition-duration: 300ms;
+	transition-timing-function: ease;
+}
+	
+
